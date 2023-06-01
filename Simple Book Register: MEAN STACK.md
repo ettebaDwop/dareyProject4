@@ -8,4 +8,6 @@ The steps involved here are as follows:
 
 
 #### Step 1 Install NodeJs
-
+#### Install MongoDB
+#### Install Express and set up routes to the server
+#### Access the routes with AngularJS
