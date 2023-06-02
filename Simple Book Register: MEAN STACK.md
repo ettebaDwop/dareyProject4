@@ -109,7 +109,11 @@ Add a file to it named server.js
 
 `vi server.js`
 
-Enter code to 
+Enter the server code into this file to look like so:
+
+
 
 #### Step 3 Install Express and set up routes to the server
 #### Step 4 Access the routes with AngularJS
+
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/526a8119-bf77-4f4b-ae55-dbe139db008e)
