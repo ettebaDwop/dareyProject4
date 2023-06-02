@@ -126,15 +126,37 @@ Edit the apps.js file to look like this:
 
 ` vi routes.js`
 
+![Screenshot (267)](https://github.com/ettebaDwop/dareyProject4/assets/7973831/729b0f52-fdff-4ee1-9ae6-01ae362ba42f)
 
+In the ‘apps’ folder, create a folder named models, change directory to the models directory and create / open a new file called book.js
 
+` mkdir models && cd models && vi book.js`
 
+The book.js file contents should look like this:
 
+```
+var mongoose = require('mongoose');
+var dbHost = 'mongodb://localhost:27017/test';
+mongoose.connect(dbHost);
+mongoose.connection;
+mongoose.set('debug', true);
+var bookSchema = mongoose.Schema( {
+  name: String,
+  isbn: {type: String, index: true},
+  author: String,
+  pages: Number
+});
+var Book = mongoose.model('Book', bookSchema);
+module.exports = mongoose.model('Book', bookSchema);
 
-
-open  book.js
+```
 ![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/e0977bb6-4f4f-4b7e-a499-feeab48e6aa4)
 
 #### Step 4 Access the routes with AngularJS
+Change the directory back up to Books
 
+cd ..
+Start the server by running this command:
+
+node server.js
 ![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/526a8119-bf77-4f4b-ae55-dbe139db008e)
