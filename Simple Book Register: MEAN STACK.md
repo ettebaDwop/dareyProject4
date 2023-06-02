@@ -47,14 +47,37 @@ echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/
 
 Running the code above brings up errors due to version compattibility and deprecation of some packages. 
 
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/e98f3543-9beb-47cf-859b-4b1d20f45e18)
 
+The error above imples that, MongoDb has no official build for ubuntu 22.04 at the moment. Thus, Ubuntu 22.04 has upgraded libssl to 3 and does not propose libssl1.1
 
-To solve this problem ......
+To solve this problem, we will force the installation of libssl1.1 by adding the ubuntu 20.04 source:
 
+` echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list`
 
-` sudo service mongodb start`
+Then run the update command:
 
-Verify that the service is up and running
+` sudo apt-get update`
+
+and install libss11.1
+
+` sudo apt-get install libssl1.1 `  
+
+Re-install MongoDb
+
+` Sudo apt-get install -y mongodb-org`
+
+Delete the file created in line 56.
+
+` sudo rm /etc/apt/sources.list.d/focal-security.list`
+
+Start and enable  Mongodb
+
+` sudo systemctl start mongod `
+
+` sudo systemctl enable mongod`
+
+Verify that the service is up and running by checking the system status
 
 ` sudo systemctl status mongodb`
 
