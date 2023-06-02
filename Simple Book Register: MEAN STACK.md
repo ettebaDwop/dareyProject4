@@ -95,7 +95,7 @@ We need ‘body-parser’ package to help us process JSON files passed in reques
 
 ` sudo npm install body-parser`
 
-
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/89b59021-04c7-4338-879c-a3d3b6beb6cf)
 
 Create a folder named ‘Books’ and change directory into the folder
 
