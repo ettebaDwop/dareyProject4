@@ -14,7 +14,33 @@ The steps involved here are as follows:
 
 
 #### Step 1 Install NodeJs
+TO install NodeJS, run the following commands:
+
+` sudo apt update && apt upgrade`
+`
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.lis`
+Add certificates
+
+```
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+```
+Install NodeJS
+
+` sudo apt install -y nodejs`
 
 #### Step 2 Install MongoDB
+
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.lis
+```
+Running the code above brings up errors due to version compattibility and deprecation of some packages. 
+To solve this problem ......
+
+` sudo apt install -y mongodb`
+
 #### Step 3 Install Express and set up routes to the server
 #### Step 4 Access the routes with AngularJS
