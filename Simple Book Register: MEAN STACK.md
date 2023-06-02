@@ -111,7 +111,9 @@ Add a file to it named server.js
 
 Enter the server code into this file to look like so:
 
+![Screenshot (265)](https://github.com/ettebaDwop/dareyProject4/assets/7973831/95048a1b-4ac5-48cc-aaf0-48c1ce166727)
 
+:
 
 #### Step 3 Install Express and set up routes to the server
 #### Step 4 Access the routes with AngularJS
