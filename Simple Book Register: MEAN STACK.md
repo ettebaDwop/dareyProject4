@@ -17,9 +17,13 @@ The steps involved here are as follows:
 TO install NodeJS, run the following commands:
 
 ` sudo apt update && apt upgrade`
-`
+
+```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
-echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.lis`
+echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.lis
+
+```
+
 Add certificates
 
 ```
@@ -42,6 +46,33 @@ Running the code above brings up errors due to version compattibility and deprec
 To solve this problem ......
 
 ` sudo apt install -y mongodb`
+
+` sudo service mongodb start`
+
+Verify that the service is up and running
+
+` sudo systemctl status mongodb`
+
+Install npm – Node package manager.
+
+` sudo apt install -y npm`
+
+Install body-parser package
+
+We need ‘body-parser’ package to help us process JSON files passed in requests to the server.
+
+` sudo npm install body-parser`
+Create a folder named ‘Books’ and change directory into the folder
+
+` mkdir Books && cd Books`
+
+While in the Books directory, initialize npm project
+
+`npm init`
+
+Add a file to it named server.js
+
+`vi server.js`
 
 #### Step 3 Install Express and set up routes to the server
 #### Step 4 Access the routes with AngularJS
