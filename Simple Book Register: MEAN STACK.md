@@ -77,9 +77,13 @@ Start and enable  Mongodb
 
 ` sudo systemctl enable mongod`
 
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/5decc155-50d6-405a-899e-b36be733e472)
+
 Verify that the service is up and running by checking the system status
 
 ` sudo systemctl status mongodb`
+
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/60253d29-6afe-4647-a120-6fd6f0f2c945)
 
 Install npm – Node package manager.
 
@@ -90,11 +94,14 @@ Install body-parser package
 We need ‘body-parser’ package to help us process JSON files passed in requests to the server.
 
 ` sudo npm install body-parser`
+
+
+
 Create a folder named ‘Books’ and change directory into the folder
 
 ` mkdir Books && cd Books`
 
-While in the Books directory, initialize npm project
+While in the Books directory, initialize npm 
 
 `npm init`
 
