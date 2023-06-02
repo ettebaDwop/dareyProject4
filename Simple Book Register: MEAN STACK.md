@@ -113,9 +113,28 @@ Enter the server code into this file to look like so:
 
 ![Screenshot (265)](https://github.com/ettebaDwop/dareyProject4/assets/7973831/95048a1b-4ac5-48cc-aaf0-48c1ce166727)
 
-:
-
 #### Step 3 Install Express and set up routes to the server
+Express would be installed using the Mongoose package
+
+` sudo npm install express mongoose`
+
+In ‘Books’ folder, create a folder named apps
+
+` mkdir apps && cd apps`
+
+Edit the apps.js file to look like this:
+
+` vi routes.js`
+
+
+
+
+
+
+
+open  book.js
+![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/e0977bb6-4f4f-4b7e-a499-feeab48e6aa4)
+
 #### Step 4 Access the routes with AngularJS
 
 ![image](https://github.com/ettebaDwop/dareyProject4/assets/7973831/526a8119-bf77-4f4b-ae55-dbe139db008e)
